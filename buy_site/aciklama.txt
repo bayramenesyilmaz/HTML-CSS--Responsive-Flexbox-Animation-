@@ -1,0 +1,1 @@
+hover pozisyonunda kutu tam ters renge dönücek ordadaki örnekteki gibi ve öne doğru çıkıcak

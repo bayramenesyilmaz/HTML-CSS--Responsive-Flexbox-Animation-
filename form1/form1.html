@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    
+</head>
+<body>
+
+<div style="width: 100%;">
+    <h1 style="background-color: blue; color: white; padding: 15px 30px; width: 50%;">Place an order</h1>
+    <form style="width: 100%;">
+
+
+        <fieldset style="width:50%; border-color:rgb(124, 124, 206); ">
+            <legend style="color: rgb(124, 124, 206);">Personal Data</legend><br>
+            <label for="name"></label>First Name:</label><br>
+            <input type="text" id="name"><br><br>
+
+            <label for="surname">Last Name:</label><br>
+            <input type="text" id="surname"><br><br>
+
+            <label for="street">Street:</label><br>
+            <input type="text" id="street"><br><br>
+
+            <label for="zipcode">Zipcode:</label><br>
+            <input type="text" id="zipcode"><br><br>
+
+            <label for="city">City:</label><br>
+            <input type="text" id="city"><br><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email"><br><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea style="border-style:inset" name="comments" id="comments" required placeholder="Tell us more about important colors etc." cols="50" rows="10" ></textarea><br><br>
+        </fieldset><br>
+
+        <fieldset style="width: 50%; border-color:rgb(124, 124, 206); ">
+            <legend style="color: rgb(124, 124, 206);">Request Details</legend><br>
+            <fieldset style="border-color:rgb(124, 124, 206); ">
+                <legend style="color: rgb(124, 124, 206);">Project Type:</legend>
+                <input type="radio" name="project" value="invidual" id="invidual">
+                <label for="invidual">Invidual</label><br>
+
+                <input type="radio" name="project" value="template" id="template">
+                <label for="template">Template</label>
+            </fieldset><br><br>
+
+            <fieldset style="border-color:rgb(124, 124, 206); ">
+                <legend style="color: rgb(124, 124, 206);">Requested Services:</legend>
+                <input type="checkbox" name="brandingchb" value="branding" id="branding">
+                <label for="branding">Branding</label><br>
+
+                <input type="checkbox" name="imageselectionchb" value="imageselection" id="imageselection">
+                <label for="imageselection">Image Selection</label><br>
+
+                <input type="checkbox" name="maintanancechb" value="maintanance" id="maintanance">
+                <label for="maintanance">Maintanance</label>
+            </fieldset><br><br><br>
+
+            <label for="projectstart">Project Start:</label><br><br>
+            <input type="date" name="projectdate"><br><br>
+
+            <label for="projectend">Project End:</label><br><br>
+            <input type="date" name="projectend"><br><br>
+
+            <label for="category">Category:</label><br><br>
+            <select  name="category" id="category" >
+                <option value="goverment">Goverment</option>
+                <option value="individual">Individual</option>
+                <option value="corporate">Corporate</option>
+            </select>
+            
+        </fieldset><br><br>
+            <div style="display: flex; flex-direction: row; width: 50%; justify-content: space-between; ">
+                
+                <input type="button" name="cancel" value="Cancel" style="font-size: 1.2rem;">
+                
+                <input type="button" name="order" value="Order our services" style="font-size: 1.2rem;">
+            </div>
+            
+
+
+    </form>
+</div>
+</body>
+</html>

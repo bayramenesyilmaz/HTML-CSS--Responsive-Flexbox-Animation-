@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.img{
+    margin: auto;
+    border-radius: 130px;
+    padding:1.5rem ;
+}
+
+.baslik{
+    font-size: larger;
+    text-shadow: 0 0 1px black;
+}
+
+.aciklama{
+    font-size:smaller;
+    padding-top: 2rem
+}
+
+.buton{
+    padding: .8rem 0;
+}
+.buton button{
+    padding: 0 .25rem;
+    border-radius: 2px;
+    outline: none;
+    border:1px solid black;
+    background-color: rgba(238, 236, 236, 0.925);
+    cursor: pointer;
+}

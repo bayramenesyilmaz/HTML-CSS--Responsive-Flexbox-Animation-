@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("/ödevler/html/odev25/white.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+
+h2{
+    font-size: 2rem;
+    color: rgb(102, 101, 101);
+    position: absolute;
+    top:5rem ;
+}
+
+.sec{
+    width: 20%;
+    position: absolute;
+    top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* SWİTCH YAPIMI */
+
+.toggle-switch{
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 24px;
+    border-radius: 5rem;
+}
+
+.toggle-switch input{
+    display: none;
+}
+
+.circle{
+    background-color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    border-radius: 5rem;
+}
+
+.circle::before{
+    background-color: rgb(112, 135, 199);
+    position: absolute;
+    content: ' ';
+    width: 16px;
+    height: 16px;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+input:checked + .circle{
+    background-color: rgb(112, 135, 199);
+}
+
+input:checked + .circle::before{
+    transform: translateX(20px);
+    background-color: white;
+}
+
+/* MENÜ KISMI */
+
+.main{
+    display: flex;
+    width: 70%;
+    height: 450px;
+    font-size: 1.3rem;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1.5rem;
+    margin:.5rem;
+    background-color: white;
+    width: 33.3%;
+    height: 100%;
+    border-radius: .5rem;
+    box-shadow: 0 0 5px 0 rgb(112, 135, 199);
+}
+
+.box:hover{
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 0 15px 5px rgb(235, 235, 235);
+    background-color: rgb(112, 135, 199);
+    animation: boxbig .5s ease-in-out forwards;
+}
+
+.money{
+    font-size: 3rem;
+    font-weight: bold;    
+}
+
+.money::before{
+    content: '$';
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    bottom: .3rem;
+}
+
+button{
+    padding: .7rem;
+    background-color: rgb(112, 135, 199);
+    color: white;
+    border: none;
+    border-radius: .3rem;
+    letter-spacing: .2rem;
+    font-weight: bold;
+}
+
+.box:hover button{
+    background-color: white;
+    color: rgb(112, 135, 199);
+}
+@keyframes boxbig {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+
+
+@media (min-width:576px) and (max-width:1120px) {
+    .background{
+        height: 150vh;
+        justify-content: flex-end;
+    }
+   .sec{
+       width: 60%;
+   }
+
+   .main{
+       width: 100%;
+       height: 85%;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-around;
+       flex-wrap: wrap;
+   }
+
+   .box{
+       width: 40%;
+       height: 40%;
+       
+   }
+
+}
+
+@media (max-width:576px) {
+
+    .background{
+        height: 200vh;
+        justify-content: flex-end;
+    }
+   .sec{
+       width: 90%;
+   }
+
+   .main{
+       width: 100%;
+       height: 80%;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+   }
+
+   .box{
+       width: 80%;
+       height: 28%;
+       
+   }
+}

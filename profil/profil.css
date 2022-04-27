@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.fullscreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ilk-p{
+    margin-bottom: 3rem;
+}
+.article{
+    margin-top: 2rem;
+}
+hr{
+    width: 30%;
+}
+
+.profil{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    padding: 2rem;
+    position: relative;
+}
+
+img{
+    width: 5rem;
+    border-radius: 5rem;
+    margin-right: 2rem;
+}
+
+.profil-baslik h6,h4,p{
+    margin: 1.5rem 0;
+}
+
+.profil h6{
+    letter-spacing: 1px;
+    color: grey;
+    margin-top: 0;
+}
+
+.profil p{
+    margin-bottom: 0;
+}
+
+.follow-btn{
+    position: absolute;
+    right: 3.5rem;
+    top: 4.2rem;
+}
+
+button{
+    width: 5rem;
+    padding: .2rem 1rem;
+    color: rgb(7, 255, 7);
+    text-shadow: 0 0 1px rgb(7, 255, 7);
+    border-color: rgb(7, 255, 7);
+    box-shadow: 0 0 1px 0 rgb(7, 255, 7);
+    background-color: white;
+    border-radius: .3rem;
+    cursor: pointer;
+}

@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  black;
+}
+
+/* RESİMLER */
+
+.phone{
+    width: 60%;
+    height: 100vh;
+    position: relative;
+}
+.phone img{
+    width: 100%;
+    height: 100%;
+}
+.kiz{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background-image: url('kadin.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 12rem;
+    height: 12rem;
+    border: 3px solid white;
+    border-radius: 2px;
+}
+
+/* ALT KISIM */
+
+.alttaraf{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+}
+.alttaraf:hover{
+    background-color: red;
+    opacity: .9;
+    cursor: pointer;
+}
+.alttaraf h1{
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.kirmizi{
+    border: 1px solid red;
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(221, 3, 3);
+    opacity: .7;
+}

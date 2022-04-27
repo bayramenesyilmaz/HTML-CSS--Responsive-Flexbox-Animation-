@@ -1,0 +1,6 @@
+yazılar olacak en altta ir buton
+butona bastığında o sarı kutu
+browserda yok ike bir anda yukardan aşağıya düşecek
+ve önüne böyle sarı bir kutu çıkacak
+çarpıya bastığında kapanacak
+veyahut butona bastoğında
